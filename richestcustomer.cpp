@@ -2,6 +2,8 @@ class Solution {
 public:
     int maximumWealth(vector<vector<int>>& accounts) {
        int lengthr = accounts.size();
+     //  int arr[12];
+     vector<int> arr(lengthr,0);
         int collen = accounts[0].size();
         int maximum =-1;
         for(int i=0;i<lengthr;i++)
@@ -14,7 +16,14 @@ public:
             /*if(maximum < sum){
                 maximum = sum;
             }*/
-            maximum = max(maximum,sum);
+           //maximum = max(maximum,sum);
+           arr[i]=sum;
+
+        }
+        for (int i=0;i<lengthr;i++){
+            if(maximum<arr[i]){
+                maximum = arr[i];
+            }
         }
         return maximum;
     }
@@ -22,3 +31,4 @@ public:
 
 //or use max(maximum,sum) both work
 //only function
+//array logic also works
