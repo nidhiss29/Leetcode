@@ -54,12 +54,15 @@ int main()
 
 // same question using set concept
 
-#include <vector>
+/* #include <vector>
 #include <iostream>
 #include <set>
-#include <algorithm>
+#include <algorithm> */
 
-{
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+    {
 
     int n, m, i;
     cout << "enter size";
@@ -78,11 +81,10 @@ int main()
     for (i = 0; i < m; i++)
 
     {
-
         cin >> b[i];
-
-        cout << upper_bound(a, a + n, b[i]) - a << " ";
+        cout << "ans:" << upper_bound(a, a + n, b[i]) - a << " "; // output is given along with input
     }
 
     cout << endl;
+    return 0;
 }
