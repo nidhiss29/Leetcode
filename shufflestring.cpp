@@ -1,3 +1,4 @@
+//QUE 1528
 class Solution
 {
 public:
