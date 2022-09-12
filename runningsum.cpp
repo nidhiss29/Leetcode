@@ -1,3 +1,4 @@
+//QUE 1480
 class Solution {
 public:
     vector<int> runningSum(vector<int>& nums) {
