@@ -1,4 +1,4 @@
-// brute force
+// que 1470
 
 class Solution
 {
