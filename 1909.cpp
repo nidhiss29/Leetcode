@@ -13,7 +13,7 @@ public:
                 if (used)
                     return false;
                 used = true;
-                if (i == 1 || nums[i] > nums[i - 2]) // logic 672 then i wont remove 7 so check from i-2 also if 679 then remove 9 as i>i-2
+                if (i == 1 || nums[i] > nums[i - 2]) // logic if i >i-2 so remove i-1 so update prev to i ignoring i-1  else if i-2>i then remove current element  
                     previous = nums[i];
             }
 
